@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import logo from '../assets/logo.png'
 import { motion } from 'framer-motion'
 
+
+
 const Header = () => {
   const [open, setOpen] = useState(false)
 
@@ -36,16 +38,21 @@ const Header = () => {
           </button>
 
           <nav className="hidden md:flex items-center gap-10 font-medium text-xl">
-            {leftLinks.map((link) => (
-              <a key={link} className="hover:text-yellow-300 cursor-pointer">
-                {link}
-              </a>
-            ))}
+           {leftLinks.map((link) => (
+  <a
+    key={link}
+    href={`#${link.toLowerCase()}`}
+    className="hover:text-yellow-300 cursor-pointer"
+  >
+    {link}
+  </a>
+))}
           </nav>
         </div>
 
         {/* Center logo */}
        <motion.a
+       href='#home'
   className="flex justify-center cursor-pointer"
   whileHover={{ scale: 1.1 }}   // cursor jaye to thora bara
   whileTap={{ scale: 0.9 }}     // click par dab jaye
@@ -58,10 +65,14 @@ const Header = () => {
         <div className="flex flex-1 items-center justify-end">
           <nav className="hidden md:flex items-center gap-10 font-medium text-xl">
             {rightLinks.map((link) => (
-              <a key={link} className="hover:text-yellow-300 cursor-pointer">
-                {link}
-              </a>
-            ))}
+  <a
+    key={link}
+    href={`#${link.toLowerCase()}`}
+    className="hover:text-yellow-300 cursor-pointer"
+  >
+    {link}
+  </a>
+))}
           </nav>
         </div>
       </div>
@@ -71,12 +82,13 @@ const Header = () => {
         <nav className="md:hidden flex flex-col items-center gap-5 pb-6 pt-5 font-medium text-xl border-t border-[#fdc700]/20">
           {[...leftLinks, ...rightLinks].map((link) => (
             <a
-              key={link}
-              className="hover:text-yellow-300 cursor-pointer"
-              onClick={() => setOpen(false)}
-            >
-              {link}
-            </a>
+  key={link}
+  href={`#${link.toLowerCase()}`}
+  className="hover:text-yellow-300 cursor-pointer"
+  onClick={() => setOpen(false)}
+>
+  {link}
+</a>
           ))}
         </nav>
       )}

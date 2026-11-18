@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const Hero = () => {
   return (
     <div>
-      <section className="text-white bg-gray-900 overflow-hidden">
+      <section id='home' className="scroll-mt-28 text-white bg-gray-900 overflow-hidden">
         <div className="container mx-auto flex flex-col items-center px-5 py-12 sm:px-8 sm:py-20 md:flex-row md:px-12 md:py-28 lg:px-12 lg:py-40">
 
           {/* Text */}

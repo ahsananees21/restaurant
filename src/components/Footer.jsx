@@ -18,13 +18,16 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-bold text-yellow-400 mb-3">Quick Links</h2>
           <ul className="space-y-2">
-            {['Home', 'About', 'Menu', 'Contact'].map((link) => (
-              <li key={link}>
-                <a className="text-gray-400 hover:text-yellow-400 cursor-pointer transition-colors">
-                  {link}
-                </a>
-              </li>
-            ))}
+           {['Home', 'About', 'Menu', 'Contact'].map((link) => (
+  <li key={link}>
+    <a
+      href={`#${link.toLowerCase()}`}
+      className="text-gray-400 hover:text-yellow-400 cursor-pointer transition-colors"
+    >
+      {link}
+    </a>
+  </li>
+))}
           </ul>
         </div>
 

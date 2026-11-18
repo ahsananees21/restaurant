@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const Contact = () => {
   return (
-    <section className="text-gray-600 bg-[#101828] body-font overflow-hidden">
+    <section id='contact' className="scroll-mt-28 text-gray-600 bg-[#101828] body-font overflow-hidden">
       <div className="container mx-auto px-6 sm:px-10 lg:px-16 py-16 lg:py-24 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10 lg:gap-16">
 
         {/* LEFT: Get in Touch (left se right) */}

@@ -36,7 +36,7 @@ const Menu = () => {
   const [active, setActive] = useState('Burgers')
 
   return (
-    <section className="bg-[#101828] text-[#fdc700] py-14 sm:py-20 lg:py-32 overflow-hidden">
+    <section id='menu' className="scroll-mt-28 bg-[#101828] text-[#fdc700] py-14 sm:py-20 lg:py-32 overflow-hidden">
       <div className="container mx-auto px-5 sm:px-10 lg:px-15">
 
         {/* Heading: left se right */}

@@ -34,7 +34,7 @@ const item = {
 
 const About = () => {
   return (
-    <section className="relative overflow-hidden text-white bg-[#101828] body-font">
+    <section id='about' className=" scroll-mt-28 relative overflow-hidden text-white bg-[#101828] body-font">
 
       <div className="relative container mx-auto px-6 sm:px-10 lg:px-16 py-16 lg:py-24 flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
 
